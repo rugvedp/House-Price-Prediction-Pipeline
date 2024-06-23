@@ -1,0 +1,29 @@
+[2024-06-23 20:59:35,160] 24 root - INFO - data ingestion started
+[2024-06-23 20:59:35,163] 27 root - INFO -  reading a df
+[2024-06-23 20:59:35,166] 31 root - INFO - raw saved in artifact
+[2024-06-23 20:59:35,167] 34 root - INFO - train test split completed
+[2024-06-23 20:59:35,170] 39 root - INFO - data ingestion part completed
+[2024-06-23 20:59:35,185] 83 root - INFO - read train and test data complete
+[2024-06-23 20:59:35,188] 84 root - INFO - Train Dataframe Head : 
+     price  area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus
+0  3710000  4050         2          1        1      yes        no       no              no              no        0       no        furnished
+1  3150000  9000         3          1        2      yes        no       no              no              no        2       no   semi-furnished
+2  1820000  3000         2          1        1      yes        no      yes              no              no        2       no      unfurnished
+3  8043000  7482         3          2        3      yes        no       no             yes              no        1      yes        furnished
+4  3710000  4040         2          1        1      yes        no       no              no              no        0       no   semi-furnished
+[2024-06-23 20:59:35,191] 85 root - INFO - Test Dataframe Head : 
+     price  area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus
+0  4123000  6060         2          1        1      yes        no      yes              no              no        1       no   semi-furnished
+1  3500000  3120         3          1        2      yes        no       no              no              no        1       no      unfurnished
+2  7070000  8880         2          1        1      yes        no       no              no             yes        1       no   semi-furnished
+3  5145000  7980         3          1        1      yes        no       no              no              no        1      yes   semi-furnished
+4  3360000  4750         2          1        1      yes        no       no              no              no        0       no      unfurnished
+[2024-06-23 20:59:35,191] 32 root - INFO - Data Transformation initiated
+[2024-06-23 20:59:35,191] 41 root - INFO - Pipeline Initiated
+[2024-06-23 20:59:35,204] 111 root - INFO - preprocessing pickle file saved
+[2024-06-23 20:59:35,204] 26 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-06-23 20:59:35,377] 42 root - INFO - Model Report : {'LinearRegression': 0.6134173277167563, 'RandomForest': 0.6397008378371849}
+[2024-06-23 20:59:35,378] 54 root - INFO - Best Model Found , Model Name : RandomForest , R2 Score : 0.6397008378371849
+[2024-06-23 20:59:35,385] 15 root - INFO - evaluation started
+[2024-06-23 20:59:35,396] 31 root - INFO - model has register
+[2024-06-23 20:59:36,017] 21 root - INFO - evaluation metrics captured

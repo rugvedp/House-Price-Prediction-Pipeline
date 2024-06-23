@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: HousePrice
+Version: 0.0.4
+Author: rugvedp
+Author-email: rugvedbpatil2003@gmail.com
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy

@@ -9,3 +9,6 @@ ipykernel
 xgboost
 pytest
 tox
+mypy
+
+- e

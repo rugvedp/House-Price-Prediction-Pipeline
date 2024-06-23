@@ -1,0 +1,46 @@
+[2024-06-23 21:14:17,549] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.189:8000
+[2024-06-23 21:14:17,549] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-06-23 21:14:51,904] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mlops\mlops9\mlops_template\app.py", line 11, in predict_datapoint
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "D:\conda\envs\final3\Lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\mlops\mlops9\mlops_template\templates\index.html", line 3, in top-level template code
+    <form action="{{url_for('/')}}" method="POST">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\conda\envs\final3\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/'. Did you mean 'static' instead?
+[2024-06-23 21:14:51,907] 97 werkzeug - INFO - 127.0.0.1 - - [23/Jun/2024 21:14:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-06-23 21:14:51,979] 97 werkzeug - INFO - 127.0.0.1 - - [23/Jun/2024 21:14:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

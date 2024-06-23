@@ -1,0 +1,60 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="post">
+    <div class="form-group">
+        <label for="area">Area:</label>
+        <input type="number" id="area" name="area" placeholder="Enter area sq.ft you looking for">
+    </div>
+
+    <div class="form-group">
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="number" id="bedrooms" name="bedrooms" placeholder="Enter no. of bedrooms you looking for">
+    </div>
+
+    <div class="form-group">  
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="number" id="bathrooms" name="bathrooms" placeholder="Enter no. of bathrooms you looking for">
+    </div>
+    
+    <div class="form-group">
+        <label for="stories">Storey building:</label>
+        <input type="number" id="stories" name="stories" placeholder="Enter no. of stories">
+    </div>
+  
+    <div class="form-group">
+        <label for="parking">Parking for vehicle:</label>
+        <input type="text" id="parking" name="parking" placeholder="Enter no. of slots you want">
+    </div>
+  
+     
+  
+<div class="form-group">
+  <label for="mainroad">Do you want mainroad access?</label>
+  <select id="mainroad" name="mainroad">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="basement">Do you want basement for your room?</label>
+  <select id="basement" name="basement">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="furnishingstatus">Select the furnishing status:</label>
+  <select id="furnishingstatus" name="furnishingstatus">
+    <option value="unfurnished">Unfurnished</option>
+    <option value="semi-furnished">Semi-furnished</option>
+    <option value="furnished">Furnished</option>
+  </select>
+</div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
