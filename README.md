@@ -3,6 +3,8 @@
 
 ## Installation
 
+Dataset link: https://www.kaggle.com/datasets/harishkumardatalab/housing-price-prediction/data
+
 Follow these steps to get the project up and running on your local machine:
 
 1. Clone the repository:
